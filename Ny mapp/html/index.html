@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ronin & Amelia</title>
+    <link rel="stylesheet" href="../css/css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+</head>
+<body>
+
+<!--us card modal-->
+<div id="service-modal-wrapper">
+    <div class="service-modal">
+        <div class="modal-header">
+            <span onclick="closeServiceModal()"><i class="fa fa-times"></i></span>
+        </div>
+        <div class="us-modal-content" id="us-modal-content">
+                    
+        </div>
+
+    </div>
+</div>
+
+<!--<header class="header-wrapper">
+    <div id="header-id">
+        <h2 id="h2loggo"><span id="spanloggo">Boss</span> Queen</h2>
+            <nav class="web-menu">
+                <a href="#">Something</a>
+                <a href="#">Something</a>
+                <a href="#">Something</a>
+                <a href="#">Something</a>
+            </nav>
+    </div>
+</header>-->
+<div class="menu-wrap">
+    <input type="checkbox" class="toggler">
+    <div class="hamburger"><div></div></div>
+    <div class="menu">
+        <div>
+            <div>
+                <ul>
+                    <li><a href="#">The Past</a></li>
+                    <li><a href="#">Our Future</a></li>
+                    <li><a href="#">Who Are We?</a></li>
+                    <li><a href="#main-image">Art Gallery</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<header class="showcase">
+    <div class="container showcase-inner">
+        <a href="#main-image" class="btn">Go To Gallery</a>
+    </div>
+    <section id="service-wrapper-id" class="service-wrapper">
+        <article class="service-cards">
+            <div class="service-header">
+                <h2>Captain-America</h2>
+            </div>        
+            <div class="service-content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium minus repudiandae voluptate, aperiam
+                 autem animi minima iste odio illum corrupti blanditiis est voluptates architecto, dolorem hic!</p>
+                <button class="btn" id="service-button">Click to read more</button>
+            </div>
+        </article>
+    
+            <article class="service-cards">
+                <div class="service-header">
+                    <h2>Black Widow</h2>
+                </div>        
+                <div class="service-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium minus repudiandae voluptate, aperiam
+                     autem animi minima iste odio illum corrupti blanditiis est voluptates architecto, dolorem hic!</p>
+                    <button class="btn" id="service-button">Click to read more</button>
+                </div>
+            </article>
+    
+            <article class="service-cards">
+                <div class="service-header">
+                    <h2>Thor</h2>
+                </div>        
+                <div class="service-content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium minus repudiandae voluptate, aperiam
+                     autem animi minima iste odio illum corrupti blanditiis est voluptates architecto, dolorem hic!</p>
+                    <button class="btn" id="service-button">Click to read more</button>
+                </div>
+            </article>
+    </section> 
+
+    
+    
+    
+    <!--gallery-->      
+
+    <main class="main-image-wrapper">
+        <img id="main-image" onclick="openLightBox(this.src)" src="">
+        <span id="prev-btn"><i class="fa fa-chevron-left"></i></span>
+        <span id="next-btn"><i class="fa fa-chevron-right"></i></span>
+   </main>
+   <div id="thumbnails-wrapper">
+
+   </div>
+
+
+</header>
+
+<div id="image-lightbox">
+    <div class="lb-images-wrapper">
+        <div class="lb-header">
+            <span onclick="closeLightBox()"><i class="fa fa-times"></i></span>
+        </div>
+        <div class="lb-main-image-wrapper">
+            <img id="lb-main-image" src="">
+            <span id="lb-prev-btn" onclick="prevLbImage()"><i class="fa fa-chevron-left"></i></span>
+            <span id="lb-next-btn" onclick="nextLbImage()"><i class="fa fa-chevron-right"></i></span>
+        </div>
+        <div id="lb-thumbnails-wrapper">
+            
+        </div>    
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+<script src="../javascript/javascript.js"></script>
+</body>
+</html>
+
